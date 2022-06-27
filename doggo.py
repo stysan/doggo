@@ -1,6 +1,6 @@
 # importing turtle and asking for directory
 import turtle as t
-code = open(input("Directory: "), mode='r')).read().split("\n")
+code = open(input("Directory: "), mode='r').read().split("\n")
 line = 0
 t.reset()
 t.tracer(0)
