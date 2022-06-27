@@ -11,9 +11,9 @@ for i in code:
     try:
         # comment or blank
         if i.startswith("---") or i == "": pass
-
+        
         # command
-        if command[0] == "go":
+        elif command[0] == "go":
             if command[1] == "forward": t.forward(int(command[2]))
             elif command[1] == "backward": t.backward(int(command[2]))
             elif command[1] == "to": t.goto(int(command[2]), int(command[3]))
@@ -44,3 +44,5 @@ for i in code:
     except:
         input(f"error on line {line} go brr\n\nprobably not enough args or not integer in args i don't know!\nim just guessing")
         quit()
+t.done()
+t.mainloop()
